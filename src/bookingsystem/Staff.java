@@ -1,13 +1,12 @@
-
 package bookingsystem;
 
 public class Staff {
-    
+
     private String staffUsername;
     private String staffPassword;
-    private int staffID;
+    private String staffID;
 
-    public Staff(String staffUsername, String staffPassword, int staffID) {
+    public Staff(String staffUsername, String staffPassword, String staffID) {
         this.staffUsername = staffUsername;
         this.staffPassword = staffPassword;
         this.staffID = staffID;
@@ -29,14 +28,12 @@ public class Staff {
         this.staffPassword = staffPassword;
     }
 
-    public int getStaffID() {
+    public String getStaffID() {
         return staffID;
     }
 
-    public void setStaffID(int staffID) {
+    public void setStaffID(String staffID) {
         this.staffID = staffID;
     }
-    
-    
-    
+
 }

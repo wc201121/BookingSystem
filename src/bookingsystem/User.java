@@ -5,12 +5,13 @@ public class User {
     
     private String username;
     private String password;
-    private int userID;
+    private String UserID;
+    private String UserEmail;
 
-    public User(String username, String password, int userID) {
+    public User(String username, String password, String UserEmail, String UserID) {
         this.username = username;
         this.password = password;
-        this.userID = userID;
+        this.UserID = UserID;
     }
 
     public String getUsername() {
@@ -29,14 +30,20 @@ public class User {
         this.password = password;
     }
 
-    public int getUserID() {
-        return userID;
+    public String getUserID() {
+        return UserID;
     }
 
-    public void setUserID(int userID) {
-        this.userID = userID;
+    public void setUserID(String UserID) {
+        this.UserID = UserID;
     }
     
-    
+        public String getUserEmail() {
+        return UserEmail;
+    }
+
+    public void setUserEmail(String UserEmail) {
+        this.UserEmail = UserEmail;
+    }   
     
 }
